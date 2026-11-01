@@ -1,0 +1,5 @@
+# Numerical runs and field preparation, using Python 3.12.
+numpy==2.4.6
+scipy==1.18.0
+numba==0.65.1
+sphere-on-a-torus @ git+https://github.com/philippbogdan/sphere-on-a-torus.git@376f20bda091acee109abd183bc4684080288fc9

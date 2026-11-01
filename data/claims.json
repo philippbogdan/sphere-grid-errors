@@ -1,0 +1,965 @@
+{
+  "schema": 1,
+  "experiment": "archived",
+  "metric": "sqrt(sum(w * (h - h_ref)^2) / sum(w * h_ref^2))",
+  "claims": {
+    "cones_day10_reduction": {
+      "value": 5.332651856578047,
+      "numerator": 0.002625413742820644,
+      "denominator": 0.0004923279849184393,
+      "numerator_source": "data/evidence/tc6_week2_relax.jsonl:1",
+      "denominator_source": "data/evidence/tc6_week2_relax.jsonl:3",
+      "numerator_field": "l2_vs_T85_by_day.10",
+      "denominator_field": "l2_vs_T85_by_day.10",
+      "reference": "T85dt45"
+    },
+    "controls_day10_reduction": {
+      "value": 2.810155103305723,
+      "numerator": 0.002625413742820644,
+      "denominator": 0.0009342593722788615,
+      "numerator_source": "data/evidence/tc6_week2_relax.jsonl:1",
+      "denominator_source": "data/evidence/tc6_week2_relax.jsonl:9",
+      "numerator_field": "l2_vs_T85_by_day.10",
+      "denominator_field": "l2_vs_T85_by_day.10",
+      "reference": "T85dt45"
+    },
+    "polar_day10_reduction": {
+      "value": 1.3977265674927455,
+      "numerator": 0.002625413742820644,
+      "denominator": 0.0018783457393459545,
+      "numerator_source": "data/evidence/tc6_week2_relax.jsonl:1",
+      "denominator_source": "data/evidence/tc6_week2_relax.jsonl:8",
+      "numerator_field": "l2_vs_T85_by_day.10",
+      "denominator_field": "l2_vs_T85_by_day.10",
+      "reference": "T85dt45"
+    },
+    "paired_shapes_favouring_cones": {
+      "value": 4,
+      "total": 4,
+      "pairs": [
+        [
+          "bp",
+          20
+        ],
+        [
+          "disc",
+          20
+        ],
+        [
+          "annulus",
+          10
+        ],
+        [
+          "disc",
+          10
+        ]
+      ],
+      "reference": "T85dt45"
+    },
+    "cones_weighted_area": {
+      "value": 0.11937742900401534,
+      "source": "data/evidence/tc6_week2_relax.jsonl:3",
+      "field": "weighted_area"
+    },
+    "controls_weighted_area": {
+      "value": 0.11817340629720786,
+      "source": "data/evidence/tc6_week2_relax.jsonl:9",
+      "field": "weighted_area"
+    },
+    "main_over_spectral_M128": {
+      "value": 1.8634911844146644,
+      "numerator": 0.010562054568591394,
+      "denominator": 0.005667885449057817,
+      "numerator_source": "data/evidence/accuracy_main_ref.jsonl:5",
+      "denominator_source": "data/evidence/stswm_errors.jsonl:10",
+      "numerator_field": "l2",
+      "denominator_field": "l2",
+      "reference": "T213dt22"
+    },
+    "trsk_over_spectral_M128": {
+      "value": 1.9147929000154902,
+      "numerator": 0.010852826815957017,
+      "denominator": 0.005667885449057817,
+      "numerator_source": "data/evidence/mpas_ref.jsonl:13",
+      "denominator_source": "data/evidence/stswm_errors.jsonl:10",
+      "numerator_field": "l2",
+      "denominator_field": "l2",
+      "reference": "T213dt22"
+    },
+    "spectral_over_spectral_M128": {
+      "value": 1.0,
+      "numerator": 0.005667885449057817,
+      "denominator": 0.005667885449057817,
+      "numerator_source": "data/evidence/stswm_errors.jsonl:10",
+      "denominator_source": "data/evidence/stswm_errors.jsonl:10",
+      "numerator_field": "l2",
+      "denominator_field": "l2",
+      "reference": "T213dt22"
+    },
+    "main_over_spectral_M256": {
+      "value": 1.9434919172988658,
+      "numerator": 0.0039392703108856566,
+      "denominator": 0.002026903366987291,
+      "numerator_source": "data/evidence/accuracy_main_ref.jsonl:12",
+      "denominator_source": "data/evidence/stswm_errors.jsonl:19",
+      "numerator_field": "l2",
+      "denominator_field": "l2",
+      "reference": "T213dt22"
+    },
+    "trsk_over_spectral_M256": {
+      "value": 1.536381213463322,
+      "numerator": 0.003114096254544827,
+      "denominator": 0.002026903366987291,
+      "numerator_source": "data/evidence/mpas_ref.jsonl:9",
+      "denominator_source": "data/evidence/stswm_errors.jsonl:19",
+      "numerator_field": "l2",
+      "denominator_field": "l2",
+      "reference": "T213dt22"
+    },
+    "spectral_over_spectral_M256": {
+      "value": 1.0,
+      "numerator": 0.002026903366987291,
+      "denominator": 0.002026903366987291,
+      "numerator_source": "data/evidence/stswm_errors.jsonl:19",
+      "denominator_source": "data/evidence/stswm_errors.jsonl:19",
+      "numerator_field": "l2",
+      "denominator_field": "l2",
+      "reference": "T213dt22"
+    },
+    "main_over_spectral_M512": {
+      "value": 1.9176598413493784,
+      "numerator": 0.0013958135874154959,
+      "denominator": 0.0007278733992955285,
+      "numerator_source": "data/evidence/accuracy_main_ref.jsonl:21",
+      "denominator_source": "data/evidence/stswm_errors.jsonl:27",
+      "numerator_field": "l2",
+      "denominator_field": "l2",
+      "reference": "T213dt22"
+    },
+    "trsk_over_spectral_M512": {
+      "value": 1.045821876875258,
+      "numerator": 0.0007612259245788238,
+      "denominator": 0.0007278733992955285,
+      "numerator_source": "data/evidence/mpas_ref.jsonl:22",
+      "denominator_source": "data/evidence/stswm_errors.jsonl:27",
+      "numerator_field": "l2",
+      "denominator_field": "l2",
+      "reference": "T213dt22"
+    },
+    "spectral_over_spectral_M512": {
+      "value": 1.0,
+      "numerator": 0.0007278733992955285,
+      "denominator": 0.0007278733992955285,
+      "numerator_source": "data/evidence/stswm_errors.jsonl:27",
+      "denominator_source": "data/evidence/stswm_errors.jsonl:27",
+      "numerator_field": "l2",
+      "denominator_field": "l2",
+      "reference": "T213dt22"
+    },
+    "fine_trsk_percent_above_spectral": {
+      "value": 4.582187687525807,
+      "formula": "100 * (trsk_over_spectral_M512 - 1)",
+      "reference": "T213dt22"
+    },
+    "icos_over_main_M144_day1": {
+      "value": 7.874225293472709,
+      "numerator": 0.00018025881017909195,
+      "denominator": 2.289225967772555e-05,
+      "numerator_source": "data/evidence/mpas_ref.jsonl:10",
+      "denominator_source": "data/evidence/tc6_series.jsonl:3",
+      "numerator_field": "l2_by_day.1",
+      "denominator_field": "l2_by_day.1",
+      "reference": "T213dt22"
+    },
+    "icos_over_main_M144_day3": {
+      "value": 11.654261913555235,
+      "numerator": 0.00041917666623920123,
+      "denominator": 3.5967671685124136e-05,
+      "numerator_source": "data/evidence/mpas_ref.jsonl:10",
+      "denominator_source": "data/evidence/tc6_series.jsonl:3",
+      "numerator_field": "l2_by_day.3",
+      "denominator_field": "l2_by_day.3",
+      "reference": "T213dt22"
+    },
+    "icos_over_main_M144_day5": {
+      "value": 4.061323787987672,
+      "numerator": 0.0006974744442280372,
+      "denominator": 0.0001717357395366957,
+      "numerator_source": "data/evidence/mpas_ref.jsonl:10",
+      "denominator_source": "data/evidence/tc6_series.jsonl:3",
+      "numerator_field": "l2_by_day.5",
+      "denominator_field": "l2_by_day.5",
+      "reference": "T213dt22"
+    },
+    "icos_over_main_M288_day1": {
+      "value": 46.05707611224535,
+      "numerator": 4.7332762105865794e-05,
+      "denominator": 1.027697937022999e-06,
+      "numerator_source": "data/evidence/mpas_ref.jsonl:3",
+      "denominator_source": "data/evidence/tc6_series.jsonl:10",
+      "numerator_field": "l2_by_day.1",
+      "denominator_field": "l2_by_day.1",
+      "reference": "T213dt22"
+    },
+    "icos_over_main_M288_day3": {
+      "value": 34.01943668089119,
+      "numerator": 0.00010674362423434078,
+      "denominator": 3.137724625942997e-06,
+      "numerator_source": "data/evidence/mpas_ref.jsonl:3",
+      "denominator_source": "data/evidence/tc6_series.jsonl:10",
+      "numerator_field": "l2_by_day.3",
+      "denominator_field": "l2_by_day.3",
+      "reference": "T213dt22"
+    },
+    "icos_over_main_M288_day5": {
+      "value": 6.31981231441119,
+      "numerator": 0.00019404041774852835,
+      "denominator": 3.070350954980961e-05,
+      "numerator_source": "data/evidence/mpas_ref.jsonl:3",
+      "denominator_source": "data/evidence/tc6_series.jsonl:10",
+      "numerator_field": "l2_by_day.5",
+      "denominator_field": "l2_by_day.5",
+      "reference": "T213dt22"
+    },
+    "icos_over_main_M576_day1": {
+      "value": 17.01342850212852,
+      "numerator": 1.3401621526995629e-05,
+      "denominator": 7.877084577819795e-07,
+      "numerator_source": "data/evidence/mpas_ref.jsonl:24",
+      "denominator_source": "data/evidence/tc6_series.jsonl:15",
+      "numerator_field": "l2_by_day.1",
+      "denominator_field": "l2_by_day.1",
+      "reference": "T213dt22"
+    },
+    "icos_over_main_M576_day3": {
+      "value": 12.318351944829413,
+      "numerator": 2.6094093832372473e-05,
+      "denominator": 2.118310464682362e-06,
+      "numerator_source": "data/evidence/mpas_ref.jsonl:24",
+      "denominator_source": "data/evidence/tc6_series.jsonl:15",
+      "numerator_field": "l2_by_day.3",
+      "denominator_field": "l2_by_day.3",
+      "reference": "T213dt22"
+    },
+    "icos_over_main_M576_day5": {
+      "value": 9.368692436352465,
+      "numerator": 4.798011939304801e-05,
+      "denominator": 5.12132506419735e-06,
+      "numerator_source": "data/evidence/mpas_ref.jsonl:24",
+      "denominator_source": "data/evidence/tc6_series.jsonl:15",
+      "numerator_field": "l2_by_day.5",
+      "denominator_field": "l2_by_day.5",
+      "reference": "T213dt22"
+    },
+    "early_icos_over_main_range": {
+      "minimum": 4.061323787987672,
+      "maximum": 46.05707611224535,
+      "days": [
+        1,
+        3,
+        5
+      ],
+      "M": [
+        144,
+        288,
+        576
+      ]
+    },
+    "restart_elapsed3_ratio": {
+      "value": 12.771166856101152,
+      "numerator": 0.000824786783222305,
+      "denominator": 6.458194403969288e-05,
+      "numerator_source": "data/evidence/tc6_week2_restart.jsonl:2",
+      "denominator_source": "data/evidence/tc6_week2_restart.jsonl:5",
+      "numerator_field": "l2_by_day.10",
+      "denominator_field": "l2_by_day.3",
+      "reference": "T213dt22"
+    },
+    "twin_random_day14_rms_m": {
+      "value": 1.0737483888512416,
+      "initial_rms_m": 1.0,
+      "source": "data/evidence/tc6_week2_twins7.jsonl:1",
+      "field": "rms_difference_m_by_day.14"
+    },
+    "twin_zonal_P2_day14_rms_m": {
+      "value": 2.7041594683513512,
+      "initial_rms_m": 1.0,
+      "source": "data/evidence/tc6_week2_twins7.jsonl:2",
+      "field": "rms_difference_m_by_day.14"
+    },
+    "twin_tetrahedral_l3_day14_rms_m": {
+      "value": 1.5151805066671908,
+      "initial_rms_m": 1.0,
+      "source": "data/evidence/tc6_week2_twins7.jsonl:3",
+      "field": "rms_difference_m_by_day.14"
+    },
+    "target_T85dt45_day14_l2": {
+      "value": 0.001316692311303758,
+      "source": "data/evidence/stswm_errors.jsonl:32",
+      "field": "l2_by_day.14",
+      "reference": "T213dt22"
+    },
+    "reference_truncation_difference": {
+      "value": 0.0002801296779272977,
+      "source": "data/evidence/stswm_errors.jsonl:40",
+      "field": "l2_by_day.14",
+      "reference": "T341dt90"
+    },
+    "reference_timestep_difference": {
+      "value": 2.8401058941273965e-05,
+      "source": "data/evidence/stswm_errors.jsonl:41",
+      "field": "l2_by_day.14",
+      "reference": "T213dt22"
+    },
+    "high_latitude_length_day0_km": {
+      "value": 1632.7097931149217,
+      "source": "data/evidence/tc6_week2_sharpness.jsonl:1",
+      "field": "bands.|lat| 60-80.length_m",
+      "divisor": 1000
+    },
+    "high_latitude_length_day3_km": {
+      "value": 487.54954000555443,
+      "source": "data/evidence/tc6_week2_sharpness.jsonl:2",
+      "field": "bands.|lat| 60-80.length_m",
+      "divisor": 1000
+    },
+    "high_latitude_length_day7_km": {
+      "value": 179.3492344525791,
+      "source": "data/evidence/tc6_week2_sharpness.jsonl:3",
+      "field": "bands.|lat| 60-80.length_m",
+      "divisor": 1000
+    },
+    "high_latitude_length_day10_km": {
+      "value": 164.24571622859477,
+      "source": "data/evidence/tc6_week2_sharpness.jsonl:4",
+      "field": "bands.|lat| 60-80.length_m",
+      "divisor": 1000
+    },
+    "high_latitude_length_day14_km": {
+      "value": 229.32392705648493,
+      "source": "data/evidence/tc6_week2_sharpness.jsonl:5",
+      "field": "bands.|lat| 60-80.length_m",
+      "divisor": 1000
+    }
+  },
+  "sources": {
+    "data/evidence/tc6_week2_relax.jsonl:1": {
+      "file": "data/evidence/tc6_week2_relax.jsonl",
+      "line": 1,
+      "selector": {
+        "mode": "relax",
+        "M": 128,
+        "region": "none",
+        "par": 0,
+        "control_rotation_deg": 0,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "65d7e1f073023e1045c66d2bb90de27c14b8855db0dd996b2adf99f783da2cd4"
+    },
+    "data/evidence/tc6_week2_relax.jsonl:2": {
+      "file": "data/evidence/tc6_week2_relax.jsonl",
+      "line": 2,
+      "selector": {
+        "mode": "relax",
+        "M": 128,
+        "region": "bp",
+        "par": 10,
+        "control_rotation_deg": 0,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "65d7e1f073023e1045c66d2bb90de27c14b8855db0dd996b2adf99f783da2cd4"
+    },
+    "data/evidence/tc6_week2_relax.jsonl:3": {
+      "file": "data/evidence/tc6_week2_relax.jsonl",
+      "line": 3,
+      "selector": {
+        "mode": "relax",
+        "M": 128,
+        "region": "bp",
+        "par": 20,
+        "control_rotation_deg": 0,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "65d7e1f073023e1045c66d2bb90de27c14b8855db0dd996b2adf99f783da2cd4"
+    },
+    "data/evidence/tc6_week2_relax.jsonl:5": {
+      "file": "data/evidence/tc6_week2_relax.jsonl",
+      "line": 5,
+      "selector": {
+        "mode": "relax",
+        "M": 128,
+        "region": "disc",
+        "par": 5,
+        "control_rotation_deg": 0,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "65d7e1f073023e1045c66d2bb90de27c14b8855db0dd996b2adf99f783da2cd4"
+    },
+    "data/evidence/tc6_week2_relax.jsonl:4": {
+      "file": "data/evidence/tc6_week2_relax.jsonl",
+      "line": 4,
+      "selector": {
+        "mode": "relax",
+        "M": 128,
+        "region": "disc",
+        "par": 10,
+        "control_rotation_deg": 0,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "65d7e1f073023e1045c66d2bb90de27c14b8855db0dd996b2adf99f783da2cd4"
+    },
+    "data/evidence/tc6_week2_relax.jsonl:6": {
+      "file": "data/evidence/tc6_week2_relax.jsonl",
+      "line": 6,
+      "selector": {
+        "mode": "relax",
+        "M": 128,
+        "region": "disc",
+        "par": 20,
+        "control_rotation_deg": 0,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "65d7e1f073023e1045c66d2bb90de27c14b8855db0dd996b2adf99f783da2cd4"
+    },
+    "data/evidence/tc6_week2_relax.jsonl:7": {
+      "file": "data/evidence/tc6_week2_relax.jsonl",
+      "line": 7,
+      "selector": {
+        "mode": "relax",
+        "M": 128,
+        "region": "annulus",
+        "par": 10,
+        "control_rotation_deg": 0,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "65d7e1f073023e1045c66d2bb90de27c14b8855db0dd996b2adf99f783da2cd4"
+    },
+    "data/evidence/tc6_week2_relax.jsonl:8": {
+      "file": "data/evidence/tc6_week2_relax.jsonl",
+      "line": 8,
+      "selector": {
+        "mode": "relax",
+        "M": 128,
+        "region": "polar",
+        "par": 60,
+        "control_rotation_deg": 0,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "65d7e1f073023e1045c66d2bb90de27c14b8855db0dd996b2adf99f783da2cd4"
+    },
+    "data/evidence/tc6_week2_relax.jsonl:9": {
+      "file": "data/evidence/tc6_week2_relax.jsonl",
+      "line": 9,
+      "selector": {
+        "mode": "relax",
+        "M": 128,
+        "region": "bp",
+        "par": 20,
+        "control_rotation_deg": 60,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "65d7e1f073023e1045c66d2bb90de27c14b8855db0dd996b2adf99f783da2cd4"
+    },
+    "data/evidence/tc6_week2_relax.jsonl:10": {
+      "file": "data/evidence/tc6_week2_relax.jsonl",
+      "line": 10,
+      "selector": {
+        "mode": "relax",
+        "M": 128,
+        "region": "disc",
+        "par": 20,
+        "control_rotation_deg": 60,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "65d7e1f073023e1045c66d2bb90de27c14b8855db0dd996b2adf99f783da2cd4"
+    },
+    "data/evidence/tc6_week2_relax.jsonl:11": {
+      "file": "data/evidence/tc6_week2_relax.jsonl",
+      "line": 11,
+      "selector": {
+        "mode": "relax",
+        "M": 128,
+        "region": "annulus",
+        "par": 10,
+        "control_rotation_deg": 60,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "65d7e1f073023e1045c66d2bb90de27c14b8855db0dd996b2adf99f783da2cd4"
+    },
+    "data/evidence/tc6_week2_relax.jsonl:12": {
+      "file": "data/evidence/tc6_week2_relax.jsonl",
+      "line": 12,
+      "selector": {
+        "mode": "relax",
+        "M": 128,
+        "region": "disc",
+        "par": 10,
+        "control_rotation_deg": 60,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "65d7e1f073023e1045c66d2bb90de27c14b8855db0dd996b2adf99f783da2cd4"
+    },
+    "data/evidence/accuracy_main_ref.jsonl:5": {
+      "file": "data/evidence/accuracy_main_ref.jsonl",
+      "line": 5,
+      "selector": {
+        "case": "tc6",
+        "days": 14.0,
+        "grid": [
+          "torus",
+          128
+        ],
+        "spec": "torus:128:tc6:order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "1a2d2804e89511538df1ffacceeb341ff60292ec5d55e0d75476ba73ecf6e66d"
+    },
+    "data/evidence/stswm_errors.jsonl:10": {
+      "file": "data/evidence/stswm_errors.jsonl",
+      "line": 10,
+      "selector": {
+        "case": "tc6",
+        "against": "T213dt22",
+        "truncation": 42,
+        "dt": 900.0
+      },
+      "sha256": "f353ccd1a8fbca8911944fe7265514f71289ec4d440eb05591bc89cc1b32d7d6"
+    },
+    "data/evidence/tc6_series.jsonl:2": {
+      "file": "data/evidence/tc6_series.jsonl",
+      "line": 2,
+      "selector": {
+        "M": 128,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "ac1b4b1af2595069e1b69c6abb76ebadb2ec692ef8ebeb7fba56a9f4be15a3a9"
+    },
+    "data/evidence/mpas_ref.jsonl:13": {
+      "file": "data/evidence/mpas_ref.jsonl",
+      "line": 13,
+      "selector": {
+        "solver": "trsk",
+        "case": "tc6",
+        "days": 14.0,
+        "grid": [
+          "torus",
+          128
+        ],
+        "mesh": "torus"
+      },
+      "sha256": "8023129f4395257c34d71b8da8672351bae6c62d1070fc026fc948ea772b369a"
+    },
+    "data/evidence/accuracy_main_ref.jsonl:12": {
+      "file": "data/evidence/accuracy_main_ref.jsonl",
+      "line": 12,
+      "selector": {
+        "case": "tc6",
+        "days": 14.0,
+        "grid": [
+          "torus",
+          256
+        ],
+        "spec": "torus:256:tc6:order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "1a2d2804e89511538df1ffacceeb341ff60292ec5d55e0d75476ba73ecf6e66d"
+    },
+    "data/evidence/stswm_errors.jsonl:19": {
+      "file": "data/evidence/stswm_errors.jsonl",
+      "line": 19,
+      "selector": {
+        "case": "tc6",
+        "against": "T213dt22",
+        "truncation": 85,
+        "dt": 450.0
+      },
+      "sha256": "f353ccd1a8fbca8911944fe7265514f71289ec4d440eb05591bc89cc1b32d7d6"
+    },
+    "data/evidence/tc6_series.jsonl:7": {
+      "file": "data/evidence/tc6_series.jsonl",
+      "line": 7,
+      "selector": {
+        "M": 256,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "ac1b4b1af2595069e1b69c6abb76ebadb2ec692ef8ebeb7fba56a9f4be15a3a9"
+    },
+    "data/evidence/mpas_ref.jsonl:9": {
+      "file": "data/evidence/mpas_ref.jsonl",
+      "line": 9,
+      "selector": {
+        "solver": "trsk",
+        "case": "tc6",
+        "days": 14.0,
+        "grid": [
+          "torus",
+          256
+        ],
+        "mesh": "torus"
+      },
+      "sha256": "8023129f4395257c34d71b8da8672351bae6c62d1070fc026fc948ea772b369a"
+    },
+    "data/evidence/accuracy_main_ref.jsonl:21": {
+      "file": "data/evidence/accuracy_main_ref.jsonl",
+      "line": 21,
+      "selector": {
+        "case": "tc6",
+        "days": 14.0,
+        "grid": [
+          "torus",
+          512
+        ],
+        "spec": "torus:512:tc6:order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "1a2d2804e89511538df1ffacceeb341ff60292ec5d55e0d75476ba73ecf6e66d"
+    },
+    "data/evidence/stswm_errors.jsonl:27": {
+      "file": "data/evidence/stswm_errors.jsonl",
+      "line": 27,
+      "selector": {
+        "case": "tc6",
+        "against": "T213dt22",
+        "truncation": 170,
+        "dt": 225.0
+      },
+      "sha256": "f353ccd1a8fbca8911944fe7265514f71289ec4d440eb05591bc89cc1b32d7d6"
+    },
+    "data/evidence/tc6_series.jsonl:14": {
+      "file": "data/evidence/tc6_series.jsonl",
+      "line": 14,
+      "selector": {
+        "M": 512,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "ac1b4b1af2595069e1b69c6abb76ebadb2ec692ef8ebeb7fba56a9f4be15a3a9"
+    },
+    "data/evidence/mpas_ref.jsonl:22": {
+      "file": "data/evidence/mpas_ref.jsonl",
+      "line": 22,
+      "selector": {
+        "solver": "trsk",
+        "case": "tc6",
+        "days": 14.0,
+        "grid": [
+          "torus",
+          512
+        ],
+        "mesh": "torus"
+      },
+      "sha256": "8023129f4395257c34d71b8da8672351bae6c62d1070fc026fc948ea772b369a"
+    },
+    "data/evidence/tc6_series.jsonl:3": {
+      "file": "data/evidence/tc6_series.jsonl",
+      "line": 3,
+      "selector": {
+        "M": 144,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "ac1b4b1af2595069e1b69c6abb76ebadb2ec692ef8ebeb7fba56a9f4be15a3a9"
+    },
+    "data/evidence/mpas_ref.jsonl:10": {
+      "file": "data/evidence/mpas_ref.jsonl",
+      "line": 10,
+      "selector": {
+        "solver": "trsk",
+        "case": "tc6",
+        "grid": [
+          "icos",
+          5
+        ],
+        "days": 14.0
+      },
+      "sha256": "8023129f4395257c34d71b8da8672351bae6c62d1070fc026fc948ea772b369a"
+    },
+    "data/evidence/tc6_series.jsonl:10": {
+      "file": "data/evidence/tc6_series.jsonl",
+      "line": 10,
+      "selector": {
+        "M": 288,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "ac1b4b1af2595069e1b69c6abb76ebadb2ec692ef8ebeb7fba56a9f4be15a3a9"
+    },
+    "data/evidence/mpas_ref.jsonl:3": {
+      "file": "data/evidence/mpas_ref.jsonl",
+      "line": 3,
+      "selector": {
+        "solver": "trsk",
+        "case": "tc6",
+        "grid": [
+          "icos",
+          6
+        ],
+        "days": 14.0
+      },
+      "sha256": "8023129f4395257c34d71b8da8672351bae6c62d1070fc026fc948ea772b369a"
+    },
+    "data/evidence/tc6_series.jsonl:15": {
+      "file": "data/evidence/tc6_series.jsonl",
+      "line": 15,
+      "selector": {
+        "M": 576,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "ac1b4b1af2595069e1b69c6abb76ebadb2ec692ef8ebeb7fba56a9f4be15a3a9"
+    },
+    "data/evidence/mpas_ref.jsonl:24": {
+      "file": "data/evidence/mpas_ref.jsonl",
+      "line": 24,
+      "selector": {
+        "solver": "trsk",
+        "case": "tc6",
+        "grid": [
+          "icos",
+          7
+        ],
+        "days": 14.0
+      },
+      "sha256": "8023129f4395257c34d71b8da8672351bae6c62d1070fc026fc948ea772b369a"
+    },
+    "data/evidence/tc6_week2_restart.jsonl:1": {
+      "file": "data/evidence/tc6_week2_restart.jsonl",
+      "line": 1,
+      "selector": {
+        "M": 64,
+        "label": "main",
+        "start_day": 7,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "ab4246ecea566c4bdbd8c3e1e04802244fd252671331277bcef394fc95114e90"
+    },
+    "data/evidence/tc6_week2_restart.jsonl:2": {
+      "file": "data/evidence/tc6_week2_restart.jsonl",
+      "line": 2,
+      "selector": {
+        "M": 128,
+        "label": "main",
+        "start_day": 7,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "ab4246ecea566c4bdbd8c3e1e04802244fd252671331277bcef394fc95114e90"
+    },
+    "data/evidence/tc6_week2_restart.jsonl:3": {
+      "file": "data/evidence/tc6_week2_restart.jsonl",
+      "line": 3,
+      "selector": {
+        "M": 256,
+        "label": "main",
+        "start_day": 7,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "ab4246ecea566c4bdbd8c3e1e04802244fd252671331277bcef394fc95114e90"
+    },
+    "data/evidence/tc6_week2_restart.jsonl:4": {
+      "file": "data/evidence/tc6_week2_restart.jsonl",
+      "line": 4,
+      "selector": {
+        "M": 512,
+        "label": "main",
+        "start_day": 7,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "ab4246ecea566c4bdbd8c3e1e04802244fd252671331277bcef394fc95114e90"
+    },
+    "data/evidence/tc6_week2_restart.jsonl:5": {
+      "file": "data/evidence/tc6_week2_restart.jsonl",
+      "line": 5,
+      "selector": {
+        "M": 128,
+        "label": "main",
+        "start_day": 0,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "ab4246ecea566c4bdbd8c3e1e04802244fd252671331277bcef394fc95114e90"
+    },
+    "data/evidence/tc6_week2_restart.jsonl:6": {
+      "file": "data/evidence/tc6_week2_restart.jsonl",
+      "line": 6,
+      "selector": {
+        "M": 128,
+        "label": "FD6+KG10 (previous main)",
+        "start_day": 7,
+        "scheme": "order=6,integrator=kg10o4,courant=1.366,hv_mode=step,kappa=0.0005"
+      },
+      "sha256": "ab4246ecea566c4bdbd8c3e1e04802244fd252671331277bcef394fc95114e90"
+    },
+    "data/evidence/tc6_week2_restart.jsonl:7": {
+      "file": "data/evidence/tc6_week2_restart.jsonl",
+      "line": 7,
+      "selector": {
+        "M": 128,
+        "label": "FD4+KG10",
+        "start_day": 7,
+        "scheme": "order=4,integrator=kg10o4,courant=1.58,hv_mode=step,kappa=0.002"
+      },
+      "sha256": "ab4246ecea566c4bdbd8c3e1e04802244fd252671331277bcef394fc95114e90"
+    },
+    "data/evidence/tc6_week2_restart.jsonl:8": {
+      "file": "data/evidence/tc6_week2_restart.jsonl",
+      "line": 8,
+      "selector": {
+        "M": 128,
+        "label": "FD8, filter strong near the cones",
+        "start_day": 7,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,kappa_near=0.002,rnear=5"
+      },
+      "sha256": "ab4246ecea566c4bdbd8c3e1e04802244fd252671331277bcef394fc95114e90"
+    },
+    "data/evidence/tc6_week2_restart.jsonl:9": {
+      "file": "data/evidence/tc6_week2_restart.jsonl",
+      "line": 9,
+      "selector": {
+        "M": 128,
+        "label": "main, kappa x 5",
+        "start_day": 7,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew,kappa=0.0005"
+      },
+      "sha256": "ab4246ecea566c4bdbd8c3e1e04802244fd252671331277bcef394fc95114e90"
+    },
+    "data/evidence/tc6_week2_restart.jsonl:10": {
+      "file": "data/evidence/tc6_week2_restart.jsonl",
+      "line": 10,
+      "selector": {
+        "M": 128,
+        "label": "main, kappa / 5",
+        "start_day": 7,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew,kappa=2e-05"
+      },
+      "sha256": "ab4246ecea566c4bdbd8c3e1e04802244fd252671331277bcef394fc95114e90"
+    },
+    "data/evidence/tc6_week2_restart.jsonl:11": {
+      "file": "data/evidence/tc6_week2_restart.jsonl",
+      "line": 11,
+      "selector": {
+        "M": 128,
+        "label": "main, quarter step",
+        "start_day": 7,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew,courant=0.313"
+      },
+      "sha256": "ab4246ecea566c4bdbd8c3e1e04802244fd252671331277bcef394fc95114e90"
+    },
+    "data/evidence/tc6_week2_restart.jsonl:12": {
+      "file": "data/evidence/tc6_week2_restart.jsonl",
+      "line": 12,
+      "selector": {
+        "M": 128,
+        "label": "main, filter only near the branch points",
+        "start_day": 7,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "ab4246ecea566c4bdbd8c3e1e04802244fd252671331277bcef394fc95114e90"
+    },
+    "data/evidence/tc6_week2_restart.jsonl:13": {
+      "file": "data/evidence/tc6_week2_restart.jsonl",
+      "line": 13,
+      "selector": {
+        "M": 128,
+        "label": "main, edge orientation",
+        "start_day": 7,
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew,orient=edge"
+      },
+      "sha256": "ab4246ecea566c4bdbd8c3e1e04802244fd252671331277bcef394fc95114e90"
+    },
+    "data/evidence/tc6_week2_twins7.jsonl:1": {
+      "file": "data/evidence/tc6_week2_twins7.jsonl",
+      "line": 1,
+      "selector": {
+        "M": 128,
+        "shape": "random",
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "a7d92d6fb2c03a67a801e3462c6d05579839910115c33f36fe645dbb241a9d00"
+    },
+    "data/evidence/tc6_week2_twins7.jsonl:2": {
+      "file": "data/evidence/tc6_week2_twins7.jsonl",
+      "line": 2,
+      "selector": {
+        "M": 128,
+        "shape": "zonal_P2",
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "a7d92d6fb2c03a67a801e3462c6d05579839910115c33f36fe645dbb241a9d00"
+    },
+    "data/evidence/tc6_week2_twins7.jsonl:3": {
+      "file": "data/evidence/tc6_week2_twins7.jsonl",
+      "line": 3,
+      "selector": {
+        "M": 128,
+        "shape": "tetrahedral_l3",
+        "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+      },
+      "sha256": "a7d92d6fb2c03a67a801e3462c6d05579839910115c33f36fe645dbb241a9d00"
+    },
+    "data/evidence/stswm_errors.jsonl:32": {
+      "file": "data/evidence/stswm_errors.jsonl",
+      "line": 32,
+      "selector": {
+        "run": "T85_tc6_2h",
+        "case": "tc6",
+        "against": "T213dt22"
+      },
+      "sha256": "f353ccd1a8fbca8911944fe7265514f71289ec4d440eb05591bc89cc1b32d7d6"
+    },
+    "data/evidence/stswm_errors.jsonl:40": {
+      "file": "data/evidence/stswm_errors.jsonl",
+      "line": 40,
+      "selector": {
+        "run": "T213dt90_tc6",
+        "against": "T341dt90"
+      },
+      "sha256": "f353ccd1a8fbca8911944fe7265514f71289ec4d440eb05591bc89cc1b32d7d6"
+    },
+    "data/evidence/stswm_errors.jsonl:41": {
+      "file": "data/evidence/stswm_errors.jsonl",
+      "line": 41,
+      "selector": {
+        "run": "T213dt45_tc6",
+        "against": "T213dt22"
+      },
+      "sha256": "f353ccd1a8fbca8911944fe7265514f71289ec4d440eb05591bc89cc1b32d7d6"
+    },
+    "data/evidence/tc6_week2_sharpness.jsonl:1": {
+      "file": "data/evidence/tc6_week2_sharpness.jsonl",
+      "line": 1,
+      "selector": {
+        "mode": "sharpness",
+        "day": 0
+      },
+      "sha256": "15e70686527f708a1eb8441158db7b4e57700d5270cc8ea3b42f7ac92e094d30"
+    },
+    "data/evidence/tc6_week2_sharpness.jsonl:2": {
+      "file": "data/evidence/tc6_week2_sharpness.jsonl",
+      "line": 2,
+      "selector": {
+        "mode": "sharpness",
+        "day": 3
+      },
+      "sha256": "15e70686527f708a1eb8441158db7b4e57700d5270cc8ea3b42f7ac92e094d30"
+    },
+    "data/evidence/tc6_week2_sharpness.jsonl:3": {
+      "file": "data/evidence/tc6_week2_sharpness.jsonl",
+      "line": 3,
+      "selector": {
+        "mode": "sharpness",
+        "day": 7
+      },
+      "sha256": "15e70686527f708a1eb8441158db7b4e57700d5270cc8ea3b42f7ac92e094d30"
+    },
+    "data/evidence/tc6_week2_sharpness.jsonl:4": {
+      "file": "data/evidence/tc6_week2_sharpness.jsonl",
+      "line": 4,
+      "selector": {
+        "mode": "sharpness",
+        "day": 10
+      },
+      "sha256": "15e70686527f708a1eb8441158db7b4e57700d5270cc8ea3b42f7ac92e094d30"
+    },
+    "data/evidence/tc6_week2_sharpness.jsonl:5": {
+      "file": "data/evidence/tc6_week2_sharpness.jsonl",
+      "line": 5,
+      "selector": {
+        "mode": "sharpness",
+        "day": 14
+      },
+      "sha256": "15e70686527f708a1eb8441158db7b4e57700d5270cc8ea3b42f7ac92e094d30"
+    }
+  }
+}

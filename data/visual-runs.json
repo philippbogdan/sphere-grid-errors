@@ -1,0 +1,227 @@
+{
+  "schema": 1,
+  "experiment": "visual_rerun",
+  "public_solver_revision": "376f20bda091acee109abd183bc4684080288fc9",
+  "precision": {
+    "T85dt45": "Full-precision endpoint scores from the bundled run sidecars.",
+    "T213dt22": "Scores derived from saved float32 fields, as recorded to ten significant digits in field-metrics.csv. No full-precision T213 endpoint scores are present in the supplied sidecars."
+  },
+  "samples": "One deterministic run per configuration, extended through day 14.",
+  "target": {
+    "truncation": 85,
+    "dt_s": 45.0,
+    "output_interval_hours": 2,
+    "hdc": 311060000000000.0
+  },
+  "scoring_reference": {
+    "truncation": 213,
+    "dt_s": 22.5,
+    "output_interval_hours": 2,
+    "hdc": 8000000000000.0
+  },
+  "runs": {
+    "main": {
+      "M": 128,
+      "region": "none",
+      "par_deg": 0,
+      "control_rotation_deg": 0,
+      "l2_vs_T85dt45_by_day": {
+        "1": 3.857868511199058e-05,
+        "3": 6.465312449938982e-05,
+        "5": 0.0002234100952396054,
+        "7": 0.0007929950995265491,
+        "10": 0.0026254137393240326,
+        "14": 0.009575178947498424
+      },
+      "l2_vs_T213dt22_by_day": {
+        "1": 3.849020126e-05,
+        "3": 6.458187346e-05,
+        "5": 0.0002422426763,
+        "7": 0.0009560666559,
+        "10": 0.002869579195,
+        "14": 0.01056205707
+      },
+      "sidecar": "data/field-runs/main.json",
+      "weighted_area": 0.0
+    },
+    "cones20": {
+      "M": 128,
+      "region": "bp",
+      "par_deg": 20,
+      "control_rotation_deg": 0,
+      "l2_vs_T85dt45_by_day": {
+        "1": 0.0002598915764904974,
+        "3": 0.0003514362758177205,
+        "5": 0.0003474146243635076,
+        "7": 0.0003840134764748728,
+        "10": 0.000492327984439498,
+        "14": 0.0013871062411806143
+      },
+      "l2_vs_T213dt22_by_day": {
+        "1": 0.0002597323777,
+        "3": 0.0003504440066,
+        "5": 0.0003493398381,
+        "7": 0.0004896469369,
+        "10": 0.0007278583003,
+        "14": 0.002411040108
+      },
+      "sidecar": "data/field-runs/cones20.json",
+      "weighted_area": 0.11937742900401531
+    },
+    "controls20": {
+      "M": 128,
+      "region": "bp",
+      "par_deg": 20,
+      "control_rotation_deg": 60,
+      "l2_vs_T85dt45_by_day": {
+        "1": 0.00026215853777477644,
+        "3": 0.00035316497951068794,
+        "5": 0.00034975229672470345,
+        "7": 0.00045613745982974423,
+        "10": 0.000934259373794321,
+        "14": 0.00411702036512132
+      },
+      "l2_vs_T213dt22_by_day": {
+        "1": 0.0002619925535,
+        "3": 0.0003521727882,
+        "5": 0.0003508987221,
+        "7": 0.0005517637754,
+        "10": 0.00113995713,
+        "14": 0.005003838911
+      },
+      "sidecar": "data/field-runs/controls20.json",
+      "weighted_area": 0.11817340629720786
+    }
+  },
+  "timing": {
+    "T85_reference_approx_seconds": 120,
+    "solver_run_approx_seconds": 35,
+    "T213_reference_seconds": 4695,
+    "main_seconds": 31.399905920028687,
+    "cones20_seconds": 34.90011668205261,
+    "controls20_seconds": 34.550137519836426,
+    "field_preparation": "A few minutes."
+  },
+  "analytic_vorticity_validation": {
+    "analytic_tc6_rms_err": 1.271261827834282e-10,
+    "analytic_tc6_max_err": 2.429024188382254e-09,
+    "analytic_tc6_polar_max_err": 2.429024188382254e-09,
+    "stswm_day0_vs_analytic_rms": 1.2712618278342192e-10,
+    "stswm_day0_vs_analytic_max": 2.429024188382254e-09,
+    "second_derivative_checks": {
+      "day0": {
+        "rms_diff_vs_fd2": 5.218875330861346e-09,
+        "max_diff_vs_fd2": 5.3188104881756024e-08,
+        "polar_max_diff_vs_fd2": 5.3188104881756024e-08,
+        "max_abs_zeta": 7.455251068076035e-05
+      },
+      "day7": {
+        "rms_diff_vs_fd2": 3.5908440893807555e-07,
+        "max_diff_vs_fd2": 2.924085338249882e-06,
+        "polar_max_diff_vs_fd2": 2.924085338249882e-06,
+        "max_abs_zeta": 9.964155600205373e-05
+      },
+      "day10": {
+        "rms_diff_vs_fd2": 2.0301907272932337e-07,
+        "max_diff_vs_fd2": 1.473206467062364e-06,
+        "polar_max_diff_vs_fd2": 1.1462073993404441e-06,
+        "max_abs_zeta": 9.85653104650637e-05
+      },
+      "day14": {
+        "rms_diff_vs_fd2": 1.4036131587868765e-07,
+        "max_diff_vs_fd2": 8.552709365923629e-07,
+        "polar_max_diff_vs_fd2": 8.552709365923629e-07,
+        "max_abs_zeta": 8.647983249862738e-05
+      }
+    },
+    "max_abs_zeta_all_frames": 9.987657658342394e-05
+  },
+  "field_metrics_source": "data/field-metrics.csv",
+  "reductions_vs_main": {
+    "T85dt45": {
+      "cones20": {
+        "10": 5.332651854663502,
+        "14": 6.902988872250085
+      },
+      "controls20": {
+        "10": 2.8101550950047223,
+        "14": 2.3257545745019073
+      }
+    },
+    "T213dt22": {
+      "cones20": {
+        "10": 3.9424970407251667,
+        "14": 4.3807056692895125
+      },
+      "controls20": {
+        "10": 2.51726939503418,
+        "14": 2.110790786406273
+      }
+    }
+  },
+  "snapshot_validation": {
+    "snapshots_per_run": 169,
+    "max_offset_after_two_hour_mark_h": 0.20128479657228127,
+    "day_endpoints_exact": true,
+    "actual_times_in_fields": true
+  },
+  "pair_validation": {
+    "position_max_difference": 0,
+    "weight_max_difference": 0,
+    "height_max_difference_m": 0,
+    "error_max_difference_m": 0,
+    "scope": "All three runs, all snapshots, both references."
+  },
+  "float32_vs_full_precision_T85_max_relative_difference": 5.124807043198892e-06,
+  "main_vs_archived_T213": {
+    "source": "data/evidence/tc6_series.jsonl",
+    "selector": {
+      "M": 128,
+      "scheme": "order=8,integrator=ls10o4,courant=1.252,hv_mode=step,kappa=0.0001,cone=8_3_4_lines_cc_dw10,cone_filter=0,tracer=skew"
+    },
+    "days": {
+      "1": {
+        "field_l2": 3.849020126e-05,
+        "archived_l2": 3.849041431779433e-05,
+        "relative_difference": -5.535346867757696e-06
+      },
+      "3": {
+        "field_l2": 6.458187346e-05,
+        "archived_l2": 6.458194403968274e-05,
+        "relative_difference": -1.0928702098844667e-06
+      },
+      "5": {
+        "field_l2": 0.0002422426763,
+        "archived_l2": 0.00024224241355526842,
+        "relative_difference": 1.0846355422700071e-06
+      },
+      "7": {
+        "field_l2": 0.0009560666559,
+        "archived_l2": 0.0009560668348214107,
+        "relative_difference": -1.8714320393353745e-07
+      },
+      "10": {
+        "field_l2": 0.002869579195,
+        "archived_l2": 0.002869579005353144,
+        "relative_difference": 6.608873825975081e-08
+      },
+      "14": {
+        "field_l2": 0.01056205707,
+        "archived_l2": 0.010562056724467367,
+        "relative_difference": 3.271452175823697e-08
+      }
+    }
+  },
+  "clean_installation_check": {
+    "reference_build_and_run_seconds": 99.7,
+    "solver_run_approx_seconds": 31,
+    "reference": "T85dt45",
+    "end_day": 10,
+    "source": "Checked reproduction supplied with this release.",
+    "l2_by_configuration": {
+      "none": 0.002625413742822696,
+      "cones": 0.0004923279849184316,
+      "controls": 0.0009342593722793704
+    }
+  }
+}

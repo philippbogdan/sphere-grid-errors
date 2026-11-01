@@ -1,0 +1,24 @@
+{
+ "mode": "relax",
+ "M": 128,
+ "region": "bp",
+ "par": 20.0,
+ "control_rotation_deg": 60.0,
+ "weighted_area": 0.11817340629720786,
+ "l2_vs_T85_by_day": {
+  "1": 0.00026215853777477644,
+  "3": 0.00035316497951068794,
+  "5": 0.00034975229672470345,
+  "7": 0.00045613745982974423,
+  "10": 0.000934259373794321,
+  "14": 0.00411702036512132
+ },
+ "l2_vs_T213dt22_by_day": {},
+ "dt_s": 740.789826580031,
+ "wall_s": 34.550137519836426,
+ "run": "controls20",
+ "reference_T85": "STSWM T85, 45 s step, HDC 3.1106E+14, 2-hourly output",
+ "reference_T213": "STSWM T213, 22.5 s step, HDC 8.0E+12, 2-hourly output",
+ "snapshot_rule": "first solver step at or after each 2 h mark; actual times in t_hours; day ends exact",
+ "reference_time_alignment": "linear in time between bracketing 2-hourly reference records"
+}

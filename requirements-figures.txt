@@ -1,0 +1,4 @@
+-r requirements.txt
+# Figure export also uses Pillow for PNG colour profiles.
+matplotlib==3.11.1
+pillow==12.2.0
