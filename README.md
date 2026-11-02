@@ -32,11 +32,11 @@ TRSK on the same torus points closed the gap as resolution increased, finishing 
 
 The cones remain; their numerical treatment changes. [Methods and limits](docs/METHOD.md#resolution-and-discretisation); [the solver's wider results](https://github.com/philippbogdan/sphere-on-a-torus).
 
-## What this does not show
+## Assumptions made
 
-- A better standalone solver: relaxation supplies an external solution and is a diagnostic.
-- A general improvement factor: 5.3x is one run at one resolution, M = 128, scored against its T85 target.
-- A universal cause or ranking: one test, unequal computational work, numerical references, and no isolated explanation for TRSK's narrowing gap. This is classical numerics, with no machine learning.
+- The flow is modelled by the classical shallow-water equations in Williamson test case 6.
+- The relaxation runs use M = 128 and an external T85 solution; the 5.3x reduction is scored against that target. [Setup](docs/METHOD.md#relaxation).
+- Height errors use area weighting and interpolated numerical references. [Error definition](docs/METHOD.md#test-grid-and-error) and [reference limits](docs/METHOD.md#reference-sensitivity-and-scope).
 
 ## How to use it
 
